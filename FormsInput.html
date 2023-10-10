@@ -1,0 +1,99 @@
+<!--
+ Michael S. Brown, EECS1012 - York University (CC)
+ FormsInput.html -->
+<!doctype html>
+<html lang="en">
+<head>
+<title> Form Example </title>
+<meta charset="utf-8">
+  <link href="FormsInput.css" rel="stylesheet">  
+ 
+</head>
+
+<body>
+<form  action="https://www.eecs.yorku.ca/course_archive/2020-21/S/1012/welcome_get.php" method="get">
+
+<div class="box">
+  <!-- First Name input -->
+  <h2> LAS Student Information </h2>
+  <p> <span class="fieldName">First Name: </span>
+    <!-- complete the textbox for first name. Make sure its class is "input", and name attribute is "firstName". -->
+	<input type="text"  >
+  
+ </p>
+    <!-- Last Name input --> 
+  <p> <span class="fieldName"> Last Name: </span>
+   <!-- add a textbox for last name. Make sure its class is "input", and name attribute is "lastName"  -->
+   <input type="text"  >
+  </p>  
+
+   <!-- email input -->
+  <p> <span class="fieldName"> Email: </span>
+  <!-- add a textbox for email. Make sure its class is "input", and name attribute is "email"  -->
+  <input type="text"  >
+  </p>
+  
+  <hr>
+ 
+  <p> <span class="fieldName"> Program: </span>
+  <select name="program"> 
+    <option value="ch">CHEM</option>
+    <option value="ci">CIVIL</option> 
+    <option value="E" selected = "selected">EECS</option> 
+    <option value="ec">ECON</option>
+    <option value= "h">HIST</option>
+    <option value="M">MATH</option>
+    <!-- complete the dropdown list.  The value attribute is needed by the server. search w3school for details.
+      Make EECS the default selected one -->
+     
+  </select>
+  </p>
+
+   <p> <span class="fieldName"> Year: </span>
+    <form>
+      <input type="radio" id="1" name="number" value="1" checked="checked">
+      <label for ="1">1</label>
+      <input type="radio" id="2" name="number" value="2">
+      <label for="2">2</label>
+      <input type="radio" id="3" name="number" value="3">
+      <label for="3">3</label>
+      <input type="radio" id="4" name="number" value="4">
+      <label for="4">4</label>
+    </form>
+   <!-- complete the radio button.  Make sure name attribute is "year".  The value attribute is needed by the server. search w3school for details.
+    Make first year as default checked one -->
+  </p>  
+
+  
+  <p> <span class="fieldName"> Hobbies: </span>
+   <input type="checkbox" name="hobby[]" value="Reading"/> Reading 
+   <input type="checkbox" name="hobby[]" value="Chatting"/> Chatting 
+   <input type="checkbox" name="hobby[]" value="Jogging"/> Jogging 
+   <input type="checkbox" name="hobby[]" value="Thinking" checked="checked"/> Thinking 
+   <input type="checkbox" name="hobby[]" value="Painting"/> Painting
+   <!-- complete the checbox.  Make sure name attribute is "hobby[]". value attribute is needed by the server.  search w3school for details.
+    Make 'Thinking' as default selected one -->
+  </p>
+
+  <hr>
+  <p>
+    <span class="fieldName"> Comment: </span>
+    <textarea name="comment" rows="2" cols="40">Enter your comment here ....
+    </textarea>
+  </p>
+
+  <hr>
+    <div class="buttons"> <!-- style="text-align:center;">  -->  
+      <input type="reset" value="reset" >
+      <input type="submit" value="submit"/>
+
+	<!-- added two buttons, one for clearing data, one for submit the form. Button text should be 'Clear' and 'Submit'> -->
+  <!-- hint: <input> with type submit can create a submit button. search w3school for details. -->
+
+ 
+   </div> 
+
+</div>
+</form>
+</body>
+</html>

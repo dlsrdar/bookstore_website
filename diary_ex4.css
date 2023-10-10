@@ -1,0 +1,59 @@
+body {
+    background-image: url(./images/paper.png);
+    font-family: sans-serif;
+
+}
+.content {
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: rgb(216, 216, 225)
+}
+
+header {
+    border-width: 3px;
+    margin: 3px;
+    text-align: right;
+}
+header h2 {
+    border-width: 3px;
+    margin: 3px;
+}
+
+
+.author {
+    border-width: 3px;
+    font-style: italic;
+    color: slategrey;
+    margin: 3px;
+}
+
+.book {
+    border-style: solid;
+    border-width: 3px;
+    border-color:rgb(255, 216, 225);
+    margin: 3px;
+    margin-top: 10px;
+    padding: 15pxssss;
+    background-color: rgb(236, 236, 245);
+    overflow: hidden;
+}
+img {
+    float: right;
+    padding: 10px;
+}
+
+
+footer {
+    border-style: solid;
+    border-width: 3px;
+    border-color: blue;
+    margin: 3px;
+    text-align: center;
+    visibility: hidden;
+}
+a:hover{
+    color:red;
+}
